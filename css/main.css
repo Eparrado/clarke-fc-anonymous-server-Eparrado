@@ -1,5 +1,19 @@
 /* COMMON */
-body {}
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  background-image: url("../images/anonymous-server-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 30px;
+}
+
 .page {}
 
 
@@ -7,25 +21,78 @@ body {}
 
 /* HEADER */
 .page__header {}
-.nav-trigger {}
+.nav-trigger {
+  font: 0/0 a;
+  text-shadow: transparent;
+  color: transparent;
+  text-decoration: none;
+}
+
+.nav-trigger:after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0,0,0,.7);
+  background-image: url("../images/ico-menu.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  padding: 5px;
+  border-radius: 5px;
+}
 
 
 
 
 /* MENU */
-.nav {}
+.nav {
+  display: none;
+}
 .nav__items {}
 .nav__item {}
 .nav__link {}
-.nav-close {}
+.nav-close {
+  font: 0/0 a;
+  text-shadow: transparent;
+  color: transparent;
+  text-decoration: none;
+}
+
+.nav-close:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 30px;
+  background-color: rgba(0,0,0,.7);
+  background-image: url("../images/ico-close.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-size: 50%;
+  background-position: center;
+  padding: 5px;
+  border-radius: 5px;
+}
 
 
 
 
 /* MAIN */
 .page__main {}
-.page__wrapper {}
-.page__main-title {}
+.page__wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.page__main-title {
+  font-family: 'Roboto Slab', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-shadow:  0px 2px 5px rgba(0,0,0,.7);
+}
 
 
 
