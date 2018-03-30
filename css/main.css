@@ -86,7 +86,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.nav__item {}
+.nav__item {
+}
+
 .nav__link {
   text-decoration: none;
   color: white;
@@ -94,6 +96,10 @@ body {
   line-height: 50px;
   opacity: .8;
   letter-spacing: .5px;
+  transition: opacity ease-in-out .4s;
+}
+.nav__link:hover {
+  opacity: .4;
 }
 
 @media all and (min-width: 768px) {
